@@ -1,0 +1,53 @@
+{
+    "Nombre": "",
+    "CtaCte": [
+      {
+        "ImporteMonPrincipal": 0.00,
+        "DebeHaber": -1,
+        "MonedaCodigo": "PES",
+        "AplicacionOrigen": "",
+        "Descripcion": "",
+        "CuentaCodigo": "1.1.2.1.20",
+        "ImporteMonTransaccion": 0.00
+      }
+    ],
+    "TransaccionTipoCodigo": "OPERTESORERIA",
+    "DiferenciaCambio": 1,
+    "Proveedor": "",
+    "Cotizaciones": [
+      {
+        "MonedaCodigo": "PES",
+        "Cotizacion": 1
+      },
+      {
+        "MonedaCodigo": "DOL",
+        "Cotizacion": 120
+      }
+    ],
+    "NumeroComprobante": "",
+    "IdentificacionExterna": "",
+    "CajaCodigo": "",
+    "Fecha": "2022-09-13",
+    "Banco": [
+      {
+        "OperacionBancariaCodigo": "DEBAUTENCTA",
+        "CuentaCodigo": "1.1.1.1.11",
+        "BancoCodigo": "",
+        "BeneficiarioCheque": "valor",
+        "NumeroDocumentoFisico": "valor",
+        "DocumentoFisicoID": 1,
+        "DebeHaber": 1,
+        "MonedaCodigo": "PES",
+        "CUITLibrador": "valor",
+        "Descripcion": "",
+        "FechaDocumentoFisico": "valor",
+        "ImporteMonTransaccion": 0.00,
+        "FechaVencimientoDocumentoFisico": "valor"
+      }
+    ],
+    "EmpresaCodigo": "Prueba32",
+    "TransaccionSubtipoCodigo": "COBRANZA",
+    "Descripcion": "",
+    "FechaCobranza": "2022-09-13",
+    "UsaCotizacionOrigen": 1
+  }

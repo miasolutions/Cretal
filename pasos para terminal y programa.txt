@@ -1,0 +1,30 @@
+Pasos a seguir para levantar servidor y programa
+
+en una CMD 
+
+PS C:\Users\fcicc> cd C:\Users\fcicc\OneDrive\Desktop\cretal
+PS C:\Users\fcicc\OneDrive\Desktop\cretal>
+
+C:\Users\fcicc\OneDrive\Desktop\Cretal>venv\Scripts\activate
+
+(venv) C:\Users\fcicc\OneDrive\Desktop\Cretal>
+
+
+
+
+
+
+
+(venv) C:\Users\fcicc\OneDrive\Desktop\Cretal>flask
+
+(venv) C:\Users\fcicc\OneDrive\Desktop\Cretal>flask --app cobranzas --debug run
+02/12/2022 11:18:40 - INFO: Serving on http://[::]:8080
+02/12/2022 11:18:40 - INFO: Serving on http://0.0.0.0:8080
+
+
+http://localhost:8080/
+
+
+
+https://www.blai.blog/2019/05/habilitar-ejecucion-de-archivos-ps1-en.html
+python -m pip install --upgrade pip

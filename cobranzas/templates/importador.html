@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+<head>
+    <script type="text/javascript">
+        function loading(){
+          var loader = getElementById('loader');
+          loader.style.display = 'block';
+        }
+    </script>
+</head>
+
+{% block header %}
+    <h1>{% block title %}Importador de cobranzas{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div id="loader"></div>
+
+    <form method="post" enctype="multipart/form-data">
+        <label for="selector">Ingrese el archivo en formato .txt:</label>
+        <input type="file" name="file" value="Seleccionar...">
+        <label for="bancos">Seleccione el banco de origen de su archivo:</label>
+        <select id="bancos" name="bancos">
+            <option value="redLink">Red Link</option>
+            <option value="bancoProvincia">Banco Provincia</option>
+            <option value="bancoNacion">Banco Nación</option>
+        </select>
+        <hr>
+        <input type="submit" value="Enviar" onclick="loading();">
+    </form>
+{% endblock %}

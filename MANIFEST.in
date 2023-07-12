@@ -1,0 +1,4 @@
+include cobranzas/schema.sql
+graft cobranzas/static
+graft cobranzas/templates
+global-exclude *.pyc

@@ -1,0 +1,902 @@
+01/12/2022 10:08:59 - INFO: Serving on http://[::]:8080
+01/12/2022 10:08:59 - INFO: Serving on http://0.0.0.0:8080
+01/12/2022 10:12:50 - INFO: Serving on http://[::]:8080
+01/12/2022 10:12:50 - INFO: Serving on http://0.0.0.0:8080
+01/12/2022 11:00:56 - INFO: Serving on http://[::]:8080
+01/12/2022 11:00:56 - INFO: Serving on http://0.0.0.0:8080
+02/12/2022 11:18:40 - INFO: Serving on http://[::]:8080
+02/12/2022 11:18:40 - INFO: Serving on http://0.0.0.0:8080
+02/12/2022 12:00:10 - INFO: Serving on http://[::]:8080
+02/12/2022 12:00:10 - INFO: Serving on http://0.0.0.0:8080
+16/12/2022 08:59:27 - INFO: Serving on http://[::]:8080
+16/12/2022 08:59:27 - INFO: Serving on http://0.0.0.0:8080
+06/01/2023 12:27:58 - INFO: Serving on http://[::]:8080
+06/01/2023 12:27:58 - INFO: Serving on http://0.0.0.0:8080
+06/01/2023 15:59:24 - INFO: Serving on http://[::]:8080
+06/01/2023 15:59:24 - INFO: Serving on http://0.0.0.0:8080
+03/04/2023 09:24:41 - INFO: Serving on http://[::]:8080
+03/04/2023 09:24:41 - INFO: Serving on http://0.0.0.0:8080
+03/04/2023 16:40:09 - INFO: Serving on http://[::]:8080
+03/04/2023 16:40:09 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 16:52:59 - INFO: Serving on http://[::]:8080
+24/04/2023 16:52:59 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 17:00:42 - INFO: Serving on http://[::]:8080
+24/04/2023 17:00:42 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 17:01:32 - INFO: Serving on http://[::]:8080
+24/04/2023 17:01:32 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 17:02:03 - INFO: Serving on http://[::]:8080
+24/04/2023 17:02:03 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 17:14:58 - INFO: Serving on http://[::]:8080
+24/04/2023 17:14:58 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 17:16:59 - INFO: Serving on http://[::]:8080
+24/04/2023 17:16:59 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 22:46:32 - INFO: Serving on http://[::]:8080
+24/04/2023 22:46:32 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 22:48:33 - INFO: Serving on http://[::]:8080
+24/04/2023 22:48:33 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 22:57:41 - INFO: Serving on http://[::]:8080
+24/04/2023 22:57:41 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 22:57:47 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 139, in clasificarTxtCobranza
+    print("AÑO: ", anio)
+                   ^^^^
+NameError: name 'anio' is not defined
+24/04/2023 22:58:08 - INFO: Serving on http://[::]:8080
+24/04/2023 22:58:08 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 22:58:17 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 134, in clasificarTxtCobranza
+    numeroSucursal = int(f[(10 + i):(14 + i)])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '    '
+24/04/2023 23:00:42 - INFO: Serving on http://[::]:8080
+24/04/2023 23:00:42 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:00:48 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 163, in clasificarTxtCobranza
+    if r.json() is None:
+       ^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+24/04/2023 23:01:22 - INFO: Serving on http://[::]:8080
+24/04/2023 23:01:22 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:01:27 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 163, in clasificarTxtCobranza
+    if r.json() is None:
+       ^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+24/04/2023 23:01:49 - INFO: Serving on http://[::]:8080
+24/04/2023 23:01:49 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:01:54 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 163, in clasificarTxtCobranza
+    if r.json() is None:
+       ^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+24/04/2023 23:02:54 - INFO: Serving on http://[::]:8080
+24/04/2023 23:02:54 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:02:59 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 164, in clasificarTxtCobranza
+    if r.json() is None:
+       ^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+24/04/2023 23:05:43 - INFO: Serving on http://[::]:8080
+24/04/2023 23:05:43 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:05:52 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 134, in clasificarTxtCobranza
+    numeroSucursal = int(f[(10 + i):(14 + i)])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '    '
+24/04/2023 23:06:25 - INFO: Serving on http://[::]:8080
+24/04/2023 23:06:25 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:06:33 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 134, in clasificarTxtCobranza
+    numeroSucursal = int(f[(10 + i):(14 + i)])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '    '
+24/04/2023 23:06:56 - INFO: Serving on http://[::]:8080
+24/04/2023 23:06:56 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:07:06 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 134, in clasificarTxtCobranza
+    numeroSucursal = int(f[(10 + i):(14 + i)])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '    '
+24/04/2023 23:07:34 - INFO: Serving on http://[::]:8080
+24/04/2023 23:07:34 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:07:50 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 132, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+24/04/2023 23:08:40 - INFO: Serving on http://[::]:8080
+24/04/2023 23:08:40 - INFO: Serving on http://0.0.0.0:8080
+24/04/2023 23:09:17 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 132, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+02/05/2023 08:19:56 - INFO: Serving on http://[::]:8080
+02/05/2023 08:19:56 - INFO: Serving on http://0.0.0.0:8080
+02/05/2023 08:23:42 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "C:\xampp\htdocs\Cretal\cobranzas\importador.py", line 164, in clasificarTxtCobranza
+    if r.json() is None:
+       ^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+21/06/2023 15:01:16 - INFO: Serving on http://[::]:8080
+21/06/2023 15:01:16 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:05:44 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+21/06/2023 15:10:50 - INFO: Serving on http://[::]:8080
+21/06/2023 15:10:50 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:11:42 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+21/06/2023 15:12:59 - INFO: Serving on http://[::]:8080
+21/06/2023 15:12:59 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:13:06 - INFO: Serving on http://[::]:8080
+21/06/2023 15:13:06 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:13:30 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+21/06/2023 15:13:58 - INFO: Serving on http://[::]:8080
+21/06/2023 15:13:58 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:14:36 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+21/06/2023 15:14:54 - INFO: Serving on http://[::]:8080
+21/06/2023 15:14:54 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:15:15 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+21/06/2023 15:15:39 - INFO: Serving on http://[::]:8080
+21/06/2023 15:15:39 - INFO: Serving on http://0.0.0.0:8080
+21/06/2023 15:15:59 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+12/07/2023 14:56:48 - INFO: Serving on http://[::]:8080
+12/07/2023 14:56:48 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:02:20 - INFO: Serving on http://[::]:8080
+12/07/2023 15:02:20 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:02:51 - INFO: Serving on http://[::]:8080
+12/07/2023 15:02:51 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:03:30 - INFO: Serving on http://[::]:8080
+12/07/2023 15:03:30 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:04:16 - INFO: Serving on http://[::]:8080
+12/07/2023 15:04:16 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:04:26 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+12/07/2023 15:23:04 - INFO: Serving on http://[::]:8080
+12/07/2023 15:23:04 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:23:58 - INFO: Serving on http://[::]:8080
+12/07/2023 15:23:58 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:24:27 - INFO: Serving on http://[::]:8080
+12/07/2023 15:24:27 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:24:54 - INFO: Serving on http://[::]:8080
+12/07/2023 15:24:54 - INFO: Serving on http://0.0.0.0:8080
+12/07/2023 15:25:07 - ERROR: Exception while serving /importador
+Traceback (most recent call last):
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\channel.py", line 428, in service
+    task.service()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 168, in service
+    self.execute()
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\waitress\task.py", line 434, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hleyt\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\auth.py", line 89, in wrapped_view
+    return view(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 36, in importador
+    clasificarTxtCobranza(file)
+  File "E:\htdocs\Cretal\cobranzas\importador.py", line 133, in clasificarTxtCobranza
+    codigoEmpresa = int(f[(0 + i):(10 + i)])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''

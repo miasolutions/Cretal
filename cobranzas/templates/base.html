@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+  <title>{% block title %}{% endblock %} - Morgana Tec</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='MTec.png') }}">
+</head>
+
+<body>
+  <nav>
+    <img src="{{ url_for('static', filename='mtec_nav.png') }}" width="50" height="30">
+    <img src="{{ url_for('static', filename='mtec_nav2.png') }}" width="150" height="13">
+    <h1></h1>
+    <ul>
+      {% if g.user %}
+        <li><span>{{ g.user['username'] }}</span>
+        <li><a href="{{ url_for('importador.importador') }}">Cobranzas</a>
+        {% if g.user['user_level'] == 'admin' %}
+          <li><a href="{{ url_for('auth.register') }}">Registrar usuario</a>
+        {% endif %}
+        <li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a>
+      {% endif %}
+    </ul>
+  </nav>
+
+  <section class="content">
+    <header>
+      {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </section>
+
+</body>
